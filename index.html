@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arif Billah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+<section id="banner">
+    <img class="logo" src="./Arif Billah.jpg" width="60px"  alt="Arif Billah" >
+    <div class="banner-text"><p>Hello Dear,</p><h2>I am Arif Billah</h2>
+    <div class="banner-btn">
+        <a href="#">Find Out</a>
+        <a href="#">Read More</a>
+    </div>
+
+</div>
+</section>
+
+<div id="sideNav">
+    <ul>
+        <li><a href="#">Home</a>  </li>
+        <li><a href="#">About</a>  </li>
+        <li><a href="#">Blog</a>  </li>
+        <li><a href="#">Contact</a>  </li>
+    </ul>
+</div>
+
+<div id="menuBtn"> <img id="menu" src="./ArifBillah.jpg" width="30px" alt=""></div>    
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-150px";
+
+    menuBtn.onclick = function(){
+        if (sideNav.style.right == "-150px"){
+            sideNav.style.right = "0";
+            menu.src = "./Passport image background.png";
+        }
+        else{
+            sideNav.style.right = "-150px";
+            menu.src = "./ArifBillah.jpg";
+        }
+    }
+</script>
+
+</body>
+</html>
